@@ -1,14 +1,30 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+  "customerPaymentMethod": [
+    {
+      "vendorId": "34JKBHJVBJHVJ34BJ4K3",
+      "storeId": "45JKN4OP45NPNP45PP4",
+      "paymentMethods": [
+        {
+          "id": "11310093FJFIJOO23JOJ32O23JO3",
+          "active": true,
+          "entityCode": "",
+          "serviceCode": ""
+        }
+      ]
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "paymentMethod": [
+    {
+      "_id": "11310093FJFIJOO23JOJ32O23JO3",
+      "name": "PSE",
+      "active": true,
+      "config": {
+        "driverName": "PSE.Drive.netCore",
+        "connectionType": "serviceBus",
+        "params": {
+
+        }
+      }
+    }
+  ]
 }
