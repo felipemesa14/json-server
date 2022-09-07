@@ -1,28 +1,45 @@
 {
   "customerPaymentMethod": [
     {
-      "vendorId": "34JKBHJVBJHVJ34BJ4K3",
-      "storeId": "45JKN4OP45NPNP45PP4",
+      "id": "5eeba15a735e4a2e08868191",
+      "storeId": "5deac679d38ef90001e8f2c1",
+      "name": "Sistecrédito",
+      "phone": "11999999999",
+      "email": "fkkfkf@kffkkfkf.com",
+      "active": true,
+      "createdAt": "2020-06-18T15:22:50.000Z",
+      "updatedAt": "2020-06-18T15:22:50.000Z",
+      "businessValidation": {
+        "validateInvoice": true
+      },
       "paymentMethods": [
         {
-          "id": "11310093FJFIJOO23JOJ32O23JO3",
+          "id": "1",
           "active": true,
-          "entityCode": "",
-          "serviceCode": ""
+          "credentials": {
+            "publicKey": "pk_test_123",
+            "secretKey": "sk_test_123"
+          }
         }
       ]
     }
   ],
   "paymentMethod": [
     {
-      "_id": "11310093FJFIJOO23JOJ32O23JO3",
+      "id": "1",
       "name": "PSE",
+      "icon": "pse.svg",
       "active": true,
+      "createdAt": "2020-06-18T15:22:50.000Z",
+      "updatedAt": "2020-06-18T15:22:50.000Z",
       "config": {
         "driverName": "PSE.Drive.netCore",
         "connectionType": "serviceBus",
         "params": {
-
+          "serviceBus": {
+            "connectionString": "Endpoint=sb://sistecredito.servicebus.windows.net",
+            "queueName": "pse"
+          }
         }
       }
     }
