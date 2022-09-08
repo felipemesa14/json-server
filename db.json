@@ -1,45 +1,43 @@
 {
-  "customerPaymentMethod": [
-    {
-      "id": "5eeba15a735e4a2e08868191",
-      "storeId": "5deac679d38ef90001e8f2c1",
-      "name": "Sistecrédito",
-      "phone": "11999999999",
-      "email": "fkkfkf@kffkkfkf.com",
-      "active": true,
-      "createdAt": "2020-06-18T15:22:50.000Z",
-      "updatedAt": "2020-06-18T15:22:50.000Z",
-      "businessValidation": {
-        "validateInvoice": true
-      },
-      "paymentMethods": [
-        {
-          "id": "1",
-          "active": true,
-          "credentials": {
-            "publicKey": "pk_test_123",
-            "secretKey": "sk_test_123"
-          }
-        },
-        {
-          "id": "2",
-          "active": true,
-          "credentials": {
-            "publicKey": "pk_test_123",
-            "secretKey": "sk_test_123"
-          }
-        },
-        {
-          "id": "3",
-          "active": false,
-          "credentials": {
-            "publicKey": "pk_test_123",
-            "secretKey": "sk_test_123"
-          }
+  "customerPaymentMethod": {
+    "id": "5eeba15a735e4a2e08868191",
+    "storeId": "5deac679d38ef90001e8f2c1",
+    "name": "Sistecrédito",
+    "phone": "11999999999",
+    "email": "fkkfkf@kffkkfkf.com",
+    "active": true,
+    "createdAt": "2020-06-18T15:22:50.000Z",
+    "updatedAt": "2020-06-18T15:22:50.000Z",
+    "businessValidation": {
+      "validateInvoice": true
+    },
+    "paymentMethods": [
+      {
+        "id": "1",
+        "active": true,
+        "credentials": {
+          "publicKey": "pk_test_123",
+          "secretKey": "sk_test_123"
         }
-      ]
-    }
-  ],
+      },
+      {
+        "id": "2",
+        "active": true,
+        "credentials": {
+          "publicKey": "pk_test_123",
+          "secretKey": "sk_test_123"
+        }
+      },
+      {
+        "id": "3",
+        "active": false,
+        "credentials": {
+          "publicKey": "pk_test_123",
+          "secretKey": "sk_test_123"
+        }
+      }
+    ]
+  },
   "paymentMethod": [
     {
       "id": "1",
