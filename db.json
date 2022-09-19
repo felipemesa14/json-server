@@ -5,7 +5,7 @@
     "name": "Sistecrédito",
     "phone": "11999999999",
     "email": "fkkfkf@kffkkfkf.com",
-    "active": true,
+    "active": inactive,
     "createdAt": "2020-06-18T15:22:50.000Z",
     "updatedAt": "2020-06-18T15:22:50.000Z",
     "businessValidation": {
