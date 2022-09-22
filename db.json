@@ -12,20 +12,6 @@
       "validateInvoice": true
     },
     "paymentMethods": [
-      {{
-  "customerPaymentMethod": {
-    "id": "5eeba15a735e4a2e08868191",
-    "storeId": "5deac679d38ef90001e8f2c1",
-    "name": "Sistecrédito",
-    "phone": "11999999999",
-    "email": "fkkfkf@kffkkfkf.com",
-    "active": true,
-    "createdAt": "2020-06-18T15:22:50.000Z",
-    "updatedAt": "2020-06-18T15:22:50.000Z",
-    "businessValidation": {
-      "validateInvoice": true
-    },
-    "paymentMethods": [
       {
         "id": "1",
         "active": true,
@@ -45,63 +31,6 @@
       {
         "id": "3",
         "active": false,
-        "credentials": {
-          "publicKey": "pk_test_123",
-          "secretKey": "sk_test_123"
-        }
-      }
-    ]
-  },
-  "paymentMethod": {
-      "id": "1",
-      "name": "Sistecrédito",
-      "icon": "sistecredito.svg",
-      "active": true,
-      "createdAt": "2020-06-18T15:22:50.000Z",
-      "updatedAt": "2020-06-18T15:22:50.000Z",
-      "requiredFields":[
-        "name","value","document","typeDoc","vendorId","invoice","storeId","responseUrl"
-      ],
-      "config": {
-        "driverName": "Sistecredito.Drive.netCore",
-        "connectionType": "serviceBus",
-        "connectionString": "Endpoint=sb://sistecredito.servicebus.windows.net"
-      }
-    },
-  "Accepted" : {
-    "message": "Payment accepted",
-    "codeResponse": "00",
-    "messageResponse": "Accepted",
-    "transactionId": "123456789",
-    "authorizationCode": "123456",
-    "approvalCode": "123456",
-    "receipt": "123456789",
-    "paymentRedirectUrl": null
-  },
-  "Rejected" : {
-    "message": "Payment rejected",
-    "codeResponse": "99",
-    "messageResponse": "Rejected",
-    "transactionId": "123456789",
-    "authorizationCode": "123456",
-    "approvalCode": null,
-    "receipt": "123456789798",
-    "paymentRedirectUrl": null
-  },
-  "Pending" : {
-    "message": "Payment pending",
-    "codeResponse": "01",
-    "messageResponse": "Pending",
-    "transactionId": "123456789",
-    "authorizationCode": "123456",
-    "approvalCode": null,
-    "receipt": "123456789798",
-    "paymentRedirectUrl": "https://www.sistecredito.com?transactionId=123456789"
-  }
-}
-
-        "id": "1",
-        "active": true,
         "credentials": {
           "publicKey": "pk_test_123",
           "secretKey": "sk_test_123"
