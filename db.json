@@ -11,6 +11,9 @@
     "businessValidation": {
       "validateInvoice": true
     },
+    "paymentMethods": [
+    ]
+  },
   "paymentMethod": {
       "id": "1",
       "name": "Sistecrédito",
@@ -57,5 +60,4 @@
     "receipt": "123456789798",
     "paymentRedirectUrl": "https://www.sistecredito.com?transactionId=123456789"
   }
-}
 }
