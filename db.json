@@ -10,7 +10,7 @@
     "updatedAt": "2020-06-18T15:22:50.000Z",
     "businessValidation": {
       "validateInvoice": true
-    }},
+    },
   "paymentMethod": {
       "id": "1",
       "name": "Sistecrédito",
@@ -57,4 +57,5 @@
     "receipt": "123456789798",
     "paymentRedirectUrl": "https://www.sistecredito.com?transactionId=123456789"
   }
+}
 }
