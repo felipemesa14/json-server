@@ -19,22 +19,6 @@
           "publicKey": "pk_test_123",
           "secretKey": "sk_test_123"
         }
-      },
-      {
-        "id": "2",
-        "active": true,
-        "credentials": {
-          "publicKey": "pk_test_123",
-          "secretKey": "sk_test_123"
-        }
-      },
-      {
-        "id": "3",
-        "active": false,
-        "credentials": {
-          "publicKey": "pk_test_123",
-          "secretKey": "sk_test_123"
-        }
       }
     ]
   }],
