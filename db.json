@@ -1,5 +1,5 @@
 {
-  "customerPaymentMethod": {
+  "customerPaymentMethod": [{
     "id": "5eeba15a735e4a2e08868191",
     "storeId": "5deac679d38ef90001e8f2c1",
     "name": "Sistecrédito",
@@ -37,8 +37,8 @@
         }
       }
     ]
-  },
-  "paymentMethod": {
+  }],
+  "paymentMethod": [{
       "id": "1",
       "name": "Sistecrédito",
       "icon": "sistecredito.svg",
@@ -53,7 +53,7 @@
         "connectionType": "serviceBus",
         "connectionString": "Endpoint=sb://sistecredito.servicebus.windows.net"
       }
-    },
+    }],
   "Accepted" : {
     "message": "Payment accepted",
     "codeResponse": "00",
