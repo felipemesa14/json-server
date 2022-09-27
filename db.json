@@ -14,7 +14,7 @@
     "paymentMethods": [
       {
         "id": "1",
-        "active": false,
+        "active": true,
         "credentials": {
           "publicKey": "pk_test_123",
           "secretKey": "sk_test_123"
@@ -26,7 +26,7 @@
       "id": "1",
       "name": "Sistecrédito",
       "icon": "sistecredito.svg",
-      "active": true,
+      "active": false,
       "createdAt": "2020-06-18T15:22:50.000Z",
       "updatedAt": "2020-06-18T15:22:50.000Z",
       "requiredFields":[
