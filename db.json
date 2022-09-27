@@ -10,34 +10,8 @@
     "updatedAt": "2020-06-18T15:22:50.000Z",
     "businessValidation": {
       "validateInvoice": true
-    },
-    "paymentMethods": [
-      {
-        "id": "1",
-        "active": true,
-        "credentials": {
-          "publicKey": "pk_test_123",
-          "secretKey": "sk_test_123"
-        }
-      }
-    ]
+    }
   }],
-  "paymentMethod": [{
-      "id": "1",
-      "name": "Sistecrédito",
-      "icon": "sistecredito.svg",
-      "active": true,
-      "createdAt": "2020-06-18T15:22:50.000Z",
-      "updatedAt": "2020-06-18T15:22:50.000Z",
-      "requiredFields":[
-        "name","value","document","typeDoc","vendorId","invoice","storeId","responseUrl"
-      ],
-      "config": {
-        "driverName": "Sistecredito.Drive.netCore",
-        "connectionType": "serviceBus",
-        "connectionString": "Endpoint=sb://sistecredito.servicebus.windows.net"
-      }
-    }],
   "Accepted" : {
     "message": "Payment accepted",
     "codeResponse": "00",
