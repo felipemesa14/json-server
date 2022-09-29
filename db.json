@@ -38,30 +38,30 @@
         "connectionString": "Endpoint=sb://sistecredito.servicebus.windows.net"
       }
     }],
-  "Accepted" : {
-    "message": "Payment accepted",
+  "accepted" : {
+    "description": "Payment accepted",
     "codeResponse": "00",
-    "messageResponse": "Accepted",
+    "statusResponse": "Accepted",
     "transactionId": "123456789",
     "authorizationCode": "123456",
     "approvalCode": "123456",
     "receipt": "123456789",
     "paymentRedirectUrl": null
   },
-  "Rejected" : {
-    "message": "Payment rejected",
+  "rejected" : {
+    "description": "Payment rejected",
     "codeResponse": "99",
-    "messageResponse": "Rejected",
+    "statusResponse": "Rejected",
     "transactionId": "123456789",
     "authorizationCode": "123456",
     "approvalCode": null,
     "receipt": "123456789798",
     "paymentRedirectUrl": null
   },
-  "Pending" : {
-    "message": "Payment pending",
+  "pending" : {
+    "description": "Payment pending",
     "codeResponse": "01",
-    "messageResponse": "Pending",
+    "statusResponse": "Pending",
     "transactionId": "123456789",
     "authorizationCode": "123456",
     "approvalCode": null,
