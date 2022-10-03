@@ -52,7 +52,7 @@
     "authorizationCode": "123456",
     "approvalCode": "123456",
     "receipt": "123456789",
-    "paymentRedirectUrl": null
+    "paymentRedirectUrl": ""
   },
   "Rejected" : {
     "description": "Payment Rejected",
@@ -60,9 +60,9 @@
     "statusResponse": "Rejected",
     "transactionId": "123456789",
     "authorizationCode": "123456",
-    "approvalCode": null,
+    "approvalCode": "",
     "receipt": "123456789798",
-    "paymentRedirectUrl": null
+    "paymentRedirectUrl": ""
   },
   "Pending" : {
     "description": "Payment Pending",
@@ -70,7 +70,7 @@
     "statusResponse": "Pending",
     "transactionId": "123456789",
     "authorizationCode": "123456",
-    "approvalCode": null,
+    "approvalCode": "",
     "receipt": "123456789798",
     "paymentRedirectUrl": "https://www.sistecredito.com?transactionId=123456789"
   }
