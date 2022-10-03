@@ -30,7 +30,13 @@
       "createdAt": "2020-06-18T15:22:50.000Z",
       "updatedAt": "2020-06-18T15:22:50.000Z",
       "requiredFields":[
-        "name","value","document","typeDoc","vendorId","invoice","storeId","responseUrl"
+        {"field":"value", "display":"ValueToPay"},
+        {"field":"document", "display":"document"},
+        {"field":"typeDoc", "display":"typeDoc"},
+        {"field":"vendorId", "display":"vendorId"},
+        {"field":"invoice", "display":"invoice"},
+        {"field":"storeId", "display":"storeId"},
+        {"field":"responseUrl", "display":"responseUrl"}
       ],
       "config": {
         "driverName": "Sistecredito.Drive.netCore",
@@ -38,18 +44,18 @@
         "connectionString": "Endpoint=sb://sistecredito.servicebus.windows.net"
       }
     }],
-  "accepted" : {
-    "description": "Payment accepted",
+  "Approved" : {
+    "description": "Payment Approved",
     "codeResponse": "00",
-    "statusResponse": "Accepted",
+    "statusResponse": "Approved",
     "transactionId": "123456789",
     "authorizationCode": "123456",
     "approvalCode": "123456",
     "receipt": "123456789",
     "paymentRedirectUrl": null
   },
-  "rejected" : {
-    "description": "Payment rejected",
+  "Rejected" : {
+    "description": "Payment Rejected",
     "codeResponse": "99",
     "statusResponse": "Rejected",
     "transactionId": "123456789",
@@ -58,8 +64,8 @@
     "receipt": "123456789798",
     "paymentRedirectUrl": null
   },
-  "pending" : {
-    "description": "Payment pending",
+  "Pending" : {
+    "description": "Payment Pending",
     "codeResponse": "01",
     "statusResponse": "Pending",
     "transactionId": "123456789",
