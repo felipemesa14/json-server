@@ -11,16 +11,7 @@
     "businessValidation": {
       "validateInvoice": true
     },
-    "paymentMethods": [
-      {
-        "id": "1",
-        "active": true,
-        "credentials": {
-          "publicKey": "pk_test_123",
-          "secretKey": "sk_test_123"
-        }
-      }
-    ]
+    "paymentMethods": [{"id": "1","active": true,"credentials": {"publicKey": "pk_test_123","secretKey": "sk_test_123"}]
   }],
   "paymentMethod": [{
       "id": "1",
@@ -30,38 +21,27 @@
       "createdAt": "2020-06-18T15:22:50.000Z",
       "updatedAt": "2020-06-18T15:22:50.000Z",
       "requiredFields":[
-        {
-          "field": "$Value",
-          "display": "#valueToPay#"
-        },
-        {
-          "field": "$Client.Document",
-          "display": "#idDocument#"
-        },
-        {
-          "field": "$Client.DocType",
-          "display": "#typeDoc#"
-        },
-        {
-          "field": "$VendorId",
-          "display": "#vendorId#"
-        },
-        {
-          "field": "$Invoice",
-          "display": "#invoice#"
-        },
-        {
-          "field": "$StoreId",
-          "display": "#storeId#"
-        },
-        {
-          "field": "$UrlResponse",
-          "display": "#responseUrl#"
-        }
+        {"field": "$Client.Document","display": "#idDocument#"},
+        {"field": "$Client.DocType", "display": "#typeDocument#"},
+        {"field": "$Value", "display": "#valueToPay#"},
+        {"field": "$VendorId","display": "#vendorId#"},
+        {"field": "$Invoice","display": "#orderId#"},
+        {"field": "$StoreId","display": "#storeId#"},
+        {"field": "$UrlResponse","display": "#responseUrl#"}
       ],
+      "templateDataDriver":'{
+        "idDocument":"#idDocument#",
+        "typeDocument":"#typeDocument#",
+        "valueToPaid":"#valueToPaid#",
+        "vendorId":"#vendorId#",
+        "orderId":"#orderId#",
+        "storeId":"#storeId#",
+        "responseUrl":"#responseUrl#",
+        "ecommerceType":2
+       }',
       "config": {
-        "driverName": "Sistecredito.Drive.netCore",
-        "connectionType": "serviceBus",
+        "driverName": "Sistecredito.Driver",
+        "connectionType": "http-client",
         "connectionString": "Endpoint=sb://sistecredito.servicebus.windows.net"
       }
     }],
