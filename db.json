@@ -30,13 +30,34 @@
       "createdAt": "2020-06-18T15:22:50.000Z",
       "updatedAt": "2020-06-18T15:22:50.000Z",
       "requiredFields":[
-        {"field":"value", "display":"ValueToPay"},
-        {"field":"document", "display":"document"},
-        {"field":"typeDoc", "display":"typeDoc"},
-        {"field":"vendorId", "display":"vendorId"},
-        {"field":"invoice", "display":"invoice"},
-        {"field":"storeId", "display":"storeId"},
-        {"field":"responseUrl", "display":"responseUrl"}
+        {
+          "field": "$Value",
+          "display": "#valueToPay#"
+        },
+        {
+          "field": "$Client.Document",
+          "display": "#idDocument#"
+        },
+        {
+          "field": "$Client.DocType",
+          "display": "#typeDoc#"
+        },
+        {
+          "field": "$VendorId",
+          "display": "#vendorId#"
+        },
+        {
+          "field": "$Invoice",
+          "display": "#invoice#"
+        },
+        {
+          "field": "$StoreId",
+          "display": "#storeId#"
+        },
+        {
+          "field": "$UrlResponse",
+          "display": "#responseUrl#"
+        }
       ],
       "config": {
         "driverName": "Sistecredito.Drive.netCore",
