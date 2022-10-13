@@ -23,7 +23,7 @@
       "requiredFields":[
         {"field": "$Client.Document","display": "#idDocument#"},
         {"field": "$Client.DocType", "display": "#typeDocument#"},
-        {"field": "$Value", "display": "#valueToPay#"},
+        {"field": "$Value", "display": "#valueToPaid#"},
         {"field": "$VendorId","display": "#vendorId#"},
         {"field": "$Invoice","display": "#orderId#"},
         {"field": "$StoreId","display": "#storeId#"},
@@ -32,7 +32,7 @@
       "templateDataDriver":{
         "idDocument":"#idDocument#",
         "typeDocument":"#typeDocument#",
-        "valueToPaid":"#valueToPay#",
+        "valueToPaid":"#valueToPaid#",
         "vendorId":"#vendorId#",
         "orderId":"#orderId#",
         "storeId":"#storeId#",
