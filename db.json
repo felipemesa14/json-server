@@ -32,7 +32,7 @@
       "templateDataDriver":{
         "idDocument":"#idDocument#",
         "typeDocument":"#typeDocument#",
-        "valueToPaid":"#valueToPaid#",
+        "valueToPaid":"#valueToPay#",
         "vendorId":"#vendorId#",
         "orderId":"#orderId#",
         "storeId":"#storeId#",
