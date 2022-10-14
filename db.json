@@ -37,36 +37,9 @@
             "PostRequestMediaType": "application/json"
         }
     },
-    "RequiredFields": [
-        {
-            "Field": "$Client.Document",
-            "Display": "#idDocument#"
-        },
-        {
-            "Field": "$Client.DocType",
-            "Display": "#typeDocument#"
-        },
-        {
-            "Field": "$Value",
-            "Display": "#valueToPaid#"
-        },
-        {
-            "Field": "$VendorId",
-            "Display": "#vendorId#"
-        },
-        {
-            "Field": "$Invoice",
-            "Display": "#orderId#"
-        },
-        {
-            "Field": "$StoreId",
-            "Display": "#storeId#"
-        },
-        {
-            "Field": "$UrlResponse",
-            "Display": "#responseUrl#"
-        }
-    ],
+    "requiredFields":[
+        "name","value","document","typeDoc","vendorId","invoice","storeId","responseUrl"
+      ],
     "TemplateDataDriver": {
         "idDocument": "#idDocument#",
         "typeDocument": "#typeDocument#",
