@@ -10,7 +10,8 @@
     "updatedAt": "2020-06-18T15:22:50.000Z",
     "businessValidation": {
       "validateInvoice": true
-    }
+    },
+    "paymentMethods": []
   }],
   "paymentMethod": [{
     "Id": "1",
