@@ -1,8 +1,8 @@
 {
    "customerPaymentMethod":[
       {
-         "id":"6eeba15a735e4a2e08868191",
-         "storeId":"6deac679d38ef90001e8f2c1",
+         "id":"5eeba15a735e4a2e08868191",
+         "storeId":"5deac679d38ef90001e8f2c1",
          "identificationType":"7",
          "identification":"8110077137",
          "ciiu":"2050",
@@ -27,7 +27,7 @@
                "banks":[]
             },
             {
-               "id":"55",
+               "id":"1",
                "name":"Pse Avanza",
                "active":true,
                "credentials":{
