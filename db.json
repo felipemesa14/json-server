@@ -1,84 +1,258 @@
 {
-  "customerPaymentMethod": [{
-    "id": "5eeba15a735e4a2e08868191",
-    "storeId": "5deac679d38ef90001e8f2c1",
-    "name": "Sistecrédito",
-    "phone": "11999999999",
-    "email": "fkkfkf@kffkkfkf.com",
-    "active": true,
-    "createdAt": "2020-06-18T15:22:50.000Z",
-    "updatedAt": "2020-06-18T15:22:50.000Z",
-    "businessValidation": {
-      "validateInvoice": true
-    },
-    "paymentMethods": [{"id": "1","active": true,"credentials": {"publicKey": "pk_test_123","secretKey": "sk_test_123"}}]
-  }],
-  "paymentMethod": [{
-    "id": "1",
-    "name": "Sistecrédito",
-    "icon": "sistecredito.svg",
-    "active": true,
-    "createdAt": "2020-06-18T15:22:50.000Z",
-    "updatedAt": "2020-06-18T15:22:50.000Z",
-    "config": {
-        "driverName": "Sistecredito.Driver",
-        "connectionType": "http-client",
-        "connectionString": "Endpoint=sb://sistecredito.servicebus.windows.net",
-        "configurationDetails": {
-            "action": "credit/start",
-            "url": "https://driver-siste.herokuapp.com/",
-            "methodToExecute": "SendHttpClientPost",
-            "headers": {
-                "SCOrigen": "Staging",
-                "Ocp-Apim-Subscription-Key": "42fee88913d34e3b8c2c5ae45847bc32"
+   "customerPaymentMethod":[
+      {
+         "id":"6eeba15a735e4a2e08868191",
+         "storeId":"6deac679d38ef90001e8f2c1",
+         "identificationType":"7",
+         "identification":"8110077137",
+         "ciiu":"2050",
+         "name":"LuegoPago",
+         "phone":"11999999999",
+         "email":"fkkfkf@kffkkfkf.com",
+         "active":true,
+         "createdAt":"2020-06-18T15:22:50.000Z",
+         "updatedAt":"2020-06-18T15:22:50.000Z",
+         "businessValidation":{
+            "validateInvoice":true
+         },
+         "paymentMethods":[
+            {
+               "id":"2",
+               "name":"Qr Bancolombia",
+               "active":true,
+               "credentials":{
+                   "#storeId#": "5deac679d38ef90001e8f2c1",
+                   "#vendorId#": "5eeba15a735e4a2e08868191"
+                 },
+               "banks":[]
             },
-            "appId": "",
-            "methodType": "",
-            "postRequestMediaType": "application/json"
-        }
-    },
-    "requiredFields":[
-        "name","value","document","typeDoc","vendorId","invoice","storeId","responseUrl"
-      ],
-    "templateDataDriver": {
-        "idDocument": "#idDocument#",
-        "typeDocument": "#typeDocument#",
-        "valueToPaid": "#valueToPaid#",
-        "vendorId": "#vendorId#",
-        "orderId": "#orderId#",
-        "storeId": "#storeId#",
-        "responseUrl": "#responseUrl#",
-        "ecommerceType": 2
-    }
-}],
-  "Approved" : {
-    "description": "Payment Approved",
-    "codeResponse": "00",
-    "statusResponse": "Approved",
-    "transactionId": "123456789",
-    "authorizationCode": "123456",
-    "approvalCode": "123456",
-    "receipt": "123456789",
-    "paymentRedirectUrl": ""
-  },
-  "Rejected" : {
-    "description": "Payment Rejected",
-    "codeResponse": "99",
-    "statusResponse": "Rejected",
-    "transactionId": "123456789",
-    "authorizationCode": "123456",
-    "approvalCode": "",
-    "receipt": "123456789798",
-    "paymentRedirectUrl": ""
-  },
-  "Pending" : {
-    "description": "Payment Pending",
-    "codeResponse": "01",
-    "statusResponse": "Pending",
-    "transactionId": "123456789",
-    "authorizationCode": "123456",
-    "approvalCode": "",
-    "receipt": "123456789798",
-    "paymentRedirectUrl": "https://www.sistecredito.com?transactionId=123456789"
-  }
+            {
+               "id":"55",
+               "name":"Pse Avanza",
+               "active":true,
+               "credentials":{
+                   "#entityCode#": "8110077137",
+                   "#serviceCode#": "1003"
+               },
+               "banks":[
+                  {
+                     "financialInstitutionCode":"1022",
+                     "financialInstitutionName":"BANCO UNION COLOMBIANO"
+                  },
+                  {
+                     "financialInstitutionCode":"1077",
+                     "financialInstitutionName":"BANKA"
+                  }
+               ]
+            }
+         ]
+      }
+   ],
+   "paymentMethod":[
+      {
+         "id":"55",
+         "name":"Pse",
+         "icon":"pse.svg",
+         "active":true,
+         "createdAt":"2020-06-18T15:22:50.000Z",
+         "updatedAt":"2020-06-18T15:22:50.000Z",
+         "config":{
+            "driverName":"Sistecredito.Driver",
+            "connectionType":"HttpClient",
+            "connectionString":"Endpoint=sb://sistecredito.servicebus.windows.net",
+            "configurationDetails":{
+               "action":"pseavanza/createTransaction",
+               "url":"https://devapi.credinet.co/",
+               "methodToExecute":"SendHttpClientPost",
+               "headers":{
+                  "SCLocation": "0,0",
+                  "country" : "co",
+                  "SCOrigen":"Development",
+                  "Ocp-Apim-Subscription-Key":"b0dc8eb7924540e1913ab262b8500721"
+               },
+               "appId":"",
+               "methodType":"",
+               "postRequestMediaType":"application/json"
+            }
+         },
+         "requiredFields":[
+            {
+               "field":"$_id",
+               "display":"#transactionId#"
+            },
+            {
+               "field":"$Client.Document",
+               "display":"#document#"
+            },
+            {
+               "field":"$Client.DocType",
+               "display":"#docType#"
+            },
+            {
+               "Field":"$Value",
+               "display":"#value#"
+            },
+            {
+               "field":"$Invoice",
+               "display":"#ticketId#"
+            },
+            {
+               "field":"$UrlResponse",
+               "display":"#urlResponse#"
+            },
+            {
+               "field":"$Client.Name",
+               "display":"#clientName#"
+            },
+            {
+               "field":"$Client.LastName",
+               "display":"#lastName#"
+            },
+            {
+               "field":"$Client.Phone",
+               "display":"#cellPhone#"
+            },
+            {
+               "field":"$Client.Email",
+               "display":"#email#"
+            },
+            {
+               "field":"$Client.IpAddress",
+               "display":"#ip#"
+            },
+            {
+               "field":"$Client.Address",
+               "display":"#address#"
+            },
+            {
+               "field":"$Description",
+               "display":"#description#"
+            },
+            {
+               "field":"$PaymentMethod.BankCode",
+               "display":"#bankCode#"
+            },
+            {
+               "field":"$PaymentMethod.UserType",
+               "display":"#userType#"
+            },
+            {
+               "field":"$AlliedInformation.IdentificationType",
+               "display":"#identificationType#"
+            },
+            {
+               "field":"$AlliedInformation.Identification",
+               "display":"#identification#"
+            },
+            {
+               "field":"$AlliedInformation.Name",
+               "display":"#alliedName#"
+            },
+            {
+               "field":"$AlliedInformation.Ciiu",
+               "display":"#ciiu#"
+            }
+         ],
+         "templateDataDriver":{
+            "transactionId":"#transactionId#",
+            "client":{
+               "docType":"#docType#",
+               "document":"#document#",
+               "name":"#clientName#",
+               "lastName":"#lastName#",
+               "cellPhone":"#cellPhone#",
+               "address":"#address#",
+               "email":"#email#"
+            },
+            "allied":{
+               "identificationType":"#identificationType#",
+               "identification":"#identification#",
+               "name":"#alliedName#",
+               "ciiu":"#ciiu#",
+               "entityCode":"#entityCode#",
+               "serviceCode":"#serviceCode#"
+            },
+            "payment":{
+               "value":"#value#",
+               "vatValue":0,
+               "description":"#description#",
+               "bankCode":"#bankCode#",
+               "userType":"#userType#",
+               "ticketId":"#ticketId#",
+               "urlResponse":"#urlResponse#",
+               "references":[
+                  "#ip#",
+                  "#docType#",
+                  "#document#"
+               ]
+            }
+         }
+      },
+      {
+         "id":"2",
+         "name":"Pse",
+         "icon":"pse.svg",
+         "active":true,
+         "createdAt":"2020-06-18T15:22:50.000Z",
+         "updatedAt":"2020-06-18T15:22:50.000Z",
+         "config":{
+            "driverName":"Sistecredito.Driver",
+            "connectionType":"AzureServicesBusClient",
+            "connectionString":"Endpoint=sb://sistecredito.servicebus.windows.net",
+            "configurationDetails":{
+               "action":"CreateTransaction",
+               "url":"create_transaction_qr_test_bancolombia_driver_queue",
+               "methodToExecute":"SendCommandClient",
+               "headers":{
+                  "SCLocation": "0,0",
+                  "country" : "co",
+                  "SCOrigen":"Development",
+                  "Ocp-Apim-Subscription-Key":"b0dc8eb7924540e1913ab262b8500721"
+               },
+               "appId":"",
+               "methodType":"",
+               "postRequestMediaType":"application/json"
+            }
+         },
+         "requiredFields":[
+            {
+               "field":"$_id",
+               "display":"#transactionId#"
+            }
+         ],
+         "templateDataDriver":{
+            "transactionId":"#transactionId#"
+         }
+      }
+   ],
+   "Approved":{
+      "description":"Payment Approved",
+      "codeResponse":"00",
+      "statusResponse":"Approved",
+      "transactionId":"123456789",
+      "authorizationCode":"123456",
+      "approvalCode":"123456",
+      "receipt":"123456789",
+      "paymentRedirectUrl":""
+   },
+   "Rejected":{
+      "description":"Payment Rejected",
+      "codeResponse":"99",
+      "statusResponse":"Rejected",
+      "transactionId":"123456789",
+      "authorizationCode":"123456",
+      "approvalCode":"",
+      "receipt":"123456789798",
+      "paymentRedirectUrl":""
+   },
+   "Pending":{
+      "description":"Payment Pending",
+      "codeResponse":"01",
+      "statusResponse":"Pending",
+      "transactionId":"123456789",
+      "authorizationCode":"123456",
+      "approvalCode":"",
+      "receipt":"123456789798",
+      "paymentRedirectUrl":"https://www.sistecredito.com?transactionId=123456789"
+   }
 }
