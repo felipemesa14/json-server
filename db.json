@@ -50,7 +50,7 @@
    ],
    "paymentMethod":[
       {
-         "id":"55",
+         "id":"1",
          "name":"Pse",
          "icon":"pse.svg",
          "active":true,
@@ -190,7 +190,7 @@
       },
       {
          "id":"2",
-         "name":"Pse",
+         "name":"Qr Bancolombia",
          "icon":"pse.svg",
          "active":true,
          "createdAt":"2020-06-18T15:22:50.000Z",
