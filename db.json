@@ -67,7 +67,7 @@
                "headers":{
                   "SCLocation": "0,0",
                   "country" : "co",
-                  "SCOrigen":"Development",
+                  "SCOrigen":"Qa",
                   "Ocp-Apim-Subscription-Key":"b0dc8eb7924540e1913ab262b8500721"
                },
                "appId":"",
@@ -206,7 +206,7 @@
                "headers":{
                   "SCLocation": "0,0",
                   "country" : "co",
-                  "SCOrigen":"Development",
+                  "SCOrigen":"Qa",
                   "Ocp-Apim-Subscription-Key":"b0dc8eb7924540e1913ab262b8500721"
                },
                "appId":"",
